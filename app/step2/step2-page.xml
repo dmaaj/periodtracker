@@ -1,0 +1,24 @@
+<Page class="page" loaded="loaded"
+    xmlns:CheckBox="nativescript-checkbox"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Menstrual Period Tracker"></Label>
+    </ActionBar>
+
+    <StackLayout>
+        <!-- Add your page content here -->
+
+   
+        <Label class="label" text="STEP 2"></Label>
+        <Progress width="70%" value="66"  maxValue="100" loaded="onProgressLoaded" class="p-20 bar"/> 
+        <Label class="label" text="On average, how long is your Period?"></Label>
+        <Label class="div"/>
+         
+         <ListPicker row="1" items="{{ Pdays }}" selectedIndex="{{ index }}"  class="p-20 picker"  id="daysPicker" > </ListPicker>
+
+        <CheckBox:CheckBox checked="{{ checkProp }}" text="I don't remember" fillColor="#9610FF" id="myCheckbox" boxType="circle" tap="checkProp" />
+        
+        <button class="btn home" text="NEXT" tap="nextstep"></button>
+    </StackLayout>
+</Page>

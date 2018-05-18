@@ -1,0 +1,37 @@
+<Page class="page" loaded="loaded"
+    
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Menstrual Period Tracker"></Label>
+    </ActionBar>
+
+    <StackLayout>
+        <!-- Add your page content here -->
+
+    <Label text="How can we help you?" class="label"></Label>
+    <Button class="btn home" id="track_cycle" tap="track_cycle">
+        <FormattedString>
+            <Span text="Track my cycle &#10;" fontSize="24"></Span>
+            <Span text="Dont Plan to Get pregnant right now" fontSize="14"></Span>
+        </FormattedString>
+        </Button>
+
+    <Button class="btn home" id="w_pregnant" tap="w_pregnant">
+        <FormattedString>
+            <Span text="I want to get pregnant &#10;" fontSize="24"></Span>
+            <Span text="inform me of favorable days" fontSize="14"></Span>
+        </FormattedString>
+        </Button>
+        
+        
+        <Button class="btn home" id="i_pregnant" tap="i_pregnant">
+        <FormattedString>
+            <Span text="I'm Pregnant &#10;" fontSize="24"></Span>
+            <Span text="Want to keep track of my condition" fontSize="14"></Span>
+        </FormattedString>
+        </Button>
+         
+
+    </StackLayout>
+</Page>

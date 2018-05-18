@@ -1,0 +1,41 @@
+<Page class="page" loaded="loaded"
+    xmlns:CheckBox="nativescript-checkbox"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Menstrual Period Tracker"></Label>
+    </ActionBar>
+
+    <StackLayout>
+        <!-- Add your page content here -->
+
+               
+        <Label class="label" text="{{ Today }}"></Label>
+        <Label class="div"/>
+       
+                    
+        
+        <StackLayout class="circle">
+            <Label text="Period:" fontSize="17" class="lab"/>
+            <Label text="Day 1" class="lab" fontSize="50"/>
+            <button text="Edit Date" class="btn home" width="130" height="40"/>
+        </StackLayout>
+
+    <Label class="labe" text="{{ 'Next Period : ' + NextP }}" />    
+     <WrapLayout backgroundColor="#F1EEEE" width="90%" id="wrap">
+        <Label width="10%"/>
+        <button width="10%" class="btn hom" tap="Today"/>
+        <Label width="10%"/>
+        <button width="10%" class="btn hom" tap="Tips"/>
+        <Label width="10%"/>
+        <button width="10%" class="btn hom" tap="Calendar"/>
+        <label width="10%"/>
+        <button width="10%" class="btn hom" tap="More"/>
+        
+        <Label width="25%" text="Today" class="lab" tap="Today"/>
+        <Label width="25%" text="Tips" class="lab" tap="Tips"/>
+        <Label width="25%" text="Calendar" class="lab" tap="Calendar"/>
+        <Label width="25%" text="More" class="lab" tap="More"/>
+     </WrapLayout>   
+    </StackLayout>
+</Page>

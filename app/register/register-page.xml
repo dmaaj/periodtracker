@@ -1,0 +1,26 @@
+
+
+<Page class="page" 
+    loaded="loaded"
+    xmlns:CheckBox="nativescript-checkbox"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Menstrual Period Tracker"></Label>
+    </ActionBar>
+    
+    <StackLayout>
+        <!-- Add your page content here -->
+        <Label class="label" text="STEP 1"></Label>
+        <Progress width="70%" value="33"  maxValue="100" loaded="onProgressLoaded" class="p-20 bar"/> 
+        <Label class="label" text="When did you start your last period?"></Label>
+        <Label class="div"/>
+
+        <DatePicker class="date-picker" date="{{ date }}" minDate="{{ minDate }}" maxDate="{{ maxDate }}" id="LastP"></DatePicker>
+     
+        <CheckBox:CheckBox checked="{{ checkProp }}" text="I don't remember" fillColor="#9610FF" id="myCheckbox" boxType="circle" tap="checkProp" />
+        
+        <button class="btn home" text="NEXT" tap="nextstep"></button>
+    </StackLayout>
+    
+</Page>
